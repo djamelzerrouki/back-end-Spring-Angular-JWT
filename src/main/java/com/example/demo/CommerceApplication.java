@@ -35,6 +35,8 @@ public class CommerceApplication implements CommandLineRunner{
 		Random r=new Random();
 
 		categoryRepository.findAll().forEach(c->{
+			for (int i = 0; i < 12; i++) {
+				
 			Product p=new Product();
 			p.setName(RandomString.make(20));
 			p.setAvailable(r.nextBoolean());
@@ -44,7 +46,9 @@ public class CommerceApplication implements CommandLineRunner{
 			p.setPhotoName("");
 			p.setCategory(c);
 			productRepository.save(p);
-		});
+
+			}
+			});
 	}
 
 

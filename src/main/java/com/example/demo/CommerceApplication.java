@@ -31,7 +31,7 @@ public class CommerceApplication implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 		categoryRepository.save(new Category(null,"PC",null,null,null));
 		categoryRepository.save(new Category(null,"Smart phones",null,null,null));
-		categoryRepository.save(new Category(null,"P1C",null,null,null));
+		categoryRepository.save(new Category(null,"TV",null,null,null));
 		Random r=new Random();
 
 		categoryRepository.findAll().forEach(c->{
@@ -43,7 +43,7 @@ public class CommerceApplication implements CommandLineRunner{
 			p.setPromontion(r.nextBoolean());
 			p.setSelected(r.nextBoolean());
 			p.setCurrentprice(r.nextInt(1000)+10);
-			p.setPhotoName("");
+			p.setPhotoName("unknown.png");
 			p.setCategory(c);
 			productRepository.save(p);
 

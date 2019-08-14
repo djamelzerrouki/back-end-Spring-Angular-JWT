@@ -21,7 +21,7 @@ git clone https://github.com/djamelzerrouki/back-end-Spring-Angular-JWT
 
 ***2. Create Mysql database**
 ```bash
-create database notes_app
+create database prodects_app
 ```
 
 ***3. Change mysql username and password as per your installation**

@@ -13,24 +13,24 @@ Build Restful CRUD API for a simple application using Spring Boot, Mysql, JPA an
 
 ### Steps to Setup
 
-***1. Clone the application**
+**1. Clone the application**
 
 ```bash
 git clone https://github.com/djamelzerrouki/back-end-Spring-Angular-JWT
 ```
 
-***2. Create Mysql database**
+**2. Create Mysql database**
 ```bash
 create database prodects_app
 ```
 
-***3. Change mysql username and password as per your installation**
+**3. Change mysql username and password as per your installation**
 
 + open `src/main/resources/application.properties`
 
 + change `spring.datasource.username` and `spring.datasource.password` as per your mysql installation
 
-***4. Build and run the app using maven**
+**4. Build and run the app using maven**
 
 ```bash
 mvn package
